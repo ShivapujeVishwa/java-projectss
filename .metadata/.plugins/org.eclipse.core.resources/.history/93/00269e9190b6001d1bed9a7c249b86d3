@@ -1,0 +1,40 @@
+package com;
+
+import java.util.LinkedHashMap;
+import java.util.Scanner;
+import java.util.Set;
+
+public class DepartMentalStore {
+	// key-> product id->Integer & value ->Product Instance -> product
+
+	LinkedHashMap<Integer, Product> db = new LinkedHashMap<>();
+	Scanner sc = new Scanner(System.in);
+	int totalbill = 0;
+
+	void addProduct() {
+		db.put(1, new Product("chocalates", 10, 5));
+		db.put(2, new Product("Biscuits", 20, 10));
+		db.put(3, new Product("IceCream", 30, 20));
+	}
+
+	void buyProduct() {
+
+	}
+
+	void displayProduct() {
+		Set<Integer> keys = db.keySet();
+		for (Integer key : keys) {
+			Product p = db.get(key);
+			System.out.println("Enter" + keys + " to order " + p.getName());
+			System.out.println("Available Quantity: " + p.getQuantity());
+			System.out.println("Product Cost: rs." + p.getCost());
+			System.out.println("--------------------------------");
+		}
+
+	}
+
+	void checkout() {
+
+	}
+
+}

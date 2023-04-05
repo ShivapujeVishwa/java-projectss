@@ -1,0 +1,21 @@
+package com;
+
+public class DepartMentalStore {
+
+	void addProduct() {
+
+	}
+
+	void buyProduct() {
+
+	}
+
+	void displayProduct() {
+
+	}
+
+	void checkout() {
+
+	}
+
+}
